@@ -13,6 +13,7 @@ export function CatalogHeader({
   totalProdutos,
   onNewProduct,
 }: CatalogHeaderProps) {
+  // Hook do next-themes - setTheme muda entre light/dark
   const { theme, setTheme } = useTheme();
 
   return (

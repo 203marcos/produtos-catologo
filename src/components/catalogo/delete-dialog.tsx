@@ -28,6 +28,7 @@ export function DeleteDialog({
   onConfirm,
   loading,
 }: DeleteDialogProps) {
+  // Dialog de confirmacao antes de deletar um produto
   return (
     <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent>

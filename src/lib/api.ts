@@ -2,6 +2,7 @@ import type { Produto, CreateProdutoDto, UpdateProdutoDto } from "./types";
 
 const BASE_URL = "http://localhost:5091/api/Produto";
 
+// Trata resposta da API (erro ou JSON)
 async function handleResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
     const errorText = await response.text().catch(() => "");

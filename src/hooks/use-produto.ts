@@ -8,12 +8,13 @@ import * as api from "@/lib/api";
 import { toast } from "@/hooks/use-toast";
 
 export function useProdutos() {
+  // Estado de produtos e categorias vindo da API
   const [produtos, setProdutos] = useState<Produto[]>([]);
   const [categorias, setCategorias] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Filtros
+  // Filtros de busca e ordenação
   const [searchTerm, setSearchTerm] = useState("");
   const [categoriaFilter, setCategoriaFilter] = useState("todas");
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("todos");

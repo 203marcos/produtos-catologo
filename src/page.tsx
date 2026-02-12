@@ -13,6 +13,7 @@ import { EmptyState } from "@/components/catalogo/empty-state";
 import { toast } from "@/hooks/use-toast";
 
 export default function Page() {
+  // Dados de produtos e filtros do hook
   const {
     produtos,
     totalProdutos,
@@ -32,12 +33,12 @@ export default function Page() {
     handleDelete,
   } = useProdutos();
 
-  // Form dialog state
+  // Controla abertura do formulário de criar/editar
   const [formOpen, setFormOpen] = useState(false);
   const [formMode, setFormMode] = useState<"create" | "edit">("create");
   const [editingProduto, setEditingProduto] = useState<Produto | null>(null);
 
-  // Delete dialog state
+  // Controla abertura do dialogo de deletar
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [deletingProduto, setDeletingProduto] = useState<Produto | null>(null);
   const [deleteLoading, setDeleteLoading] = useState(false);

@@ -9,6 +9,7 @@ interface EmptyStateProps {
 }
 
 export function EmptyState({ hasFilters, onAddProduct }: EmptyStateProps) {
+  // Mostra mensagem diferente se nao tem produtos ou se filtro nao bate
   return (
     <div className="flex flex-col items-center justify-center rounded-lg border border-dashed border-border py-16 px-4">
       <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">

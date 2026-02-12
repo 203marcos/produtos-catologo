@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+// Formata preço pra real (R$ 10,00)
 const formatPrice = (value: number) =>
   new Intl.NumberFormat("pt-BR", {
     style: "currency",

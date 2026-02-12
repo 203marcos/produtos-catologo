@@ -42,6 +42,7 @@ export function ProductForm({
   produto,
   onSubmit,
 }: ProductFormProps) {
+  // Form com validação Zod - valida tipos de dados e strings
   const form = useForm<ProdutoFormValues>({
     resolver: zodResolver(produtoFormSchema),
     defaultValues: {
