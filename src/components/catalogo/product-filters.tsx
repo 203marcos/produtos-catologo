@@ -45,10 +45,10 @@ export function ProductFilters({
 }: ProductFiltersProps) {
   // Verifica se algum filtro foi ativado
   const hasActiveFilters =
-    searchTerm !== \"\" ||
-    categoriaFilter !== \"todas\" ||
-    statusFilter !== \"todos\" ||
-    sortBy !== \"recentes\";
+    searchTerm !== "" ||
+    categoriaFilter !== "todas" ||
+    statusFilter !== "todos" ||
+    sortBy !== "recentes";
 
   // Limpa todos os filtros de uma vez
   function clearFilters() {
